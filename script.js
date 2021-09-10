@@ -13,7 +13,7 @@ var	mde = 'l',
 			nme:	'Monero',						
 			sym:	'XMR',
 			conf:	30,	// blocks needed to mature
-			port:	18081,
+			port:	10128,
 			reg:	/^[4|8]{1}([A-Za-z0-9]{105}|[A-Za-z0-9]{94})$/	//address regex
 		},
 		api:		'https://api.moneroocean.stream/',
@@ -28,11 +28,11 @@ var	mde = 'l',
 			pplns:	false,												//show pplns window on chart
 		},
 		pay: {
-			min_auto:	0.003,											//minimum for automatic threshold
-			def_auto:	0.3,											//minimum for automatic threshold
-			max_fee:	0.0004,											//max fee (for min_auto)
-			zero_fee_pay:	4,											//theshold that makes fee to be zero
-			dec_auto:	4											//decimal places for threshold
+			min_auto:	0.00003,											//minimum for automatic threshold
+			def_auto:	0.003,											//minimum for automatic threshold
+			max_fee:	0.00004,											//max fee (for min_auto)
+			zero_fee_pay:											//theshold that makes fee to be zero
+			dec_auto:												//decimal places for threshold
 		}
 	},
 	$$ = {
